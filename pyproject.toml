@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "Corkboard - FastAPI ticket system"
+version = "1.0.0"
+description = "Async FastAPI ticket system for communities with login and communications over Telegram bot"
+authors = ["https://github.com/alx-it"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+databases = {extras = ["asyncpg"], version = "^0.8.0"}
+asyncpg = "^0.28.0"
+sqlalchemy = "^1.4.42"
+fastapi = {extras = ["all"], version = "^0.103.2"}
+uvicorn = "^0.23.2"
+gunicorn = "^21.2.0"
+black = "^23.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
